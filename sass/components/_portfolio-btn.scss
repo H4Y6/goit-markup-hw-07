@@ -1,0 +1,31 @@
+//  -----button-line------ 
+
+.portfolio-btn-list{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  }
+
+.portfolio-btn{
+  min-width: 73px;
+  height: 38px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: $fz;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  background: $c2-color;
+  transition: background-color $transition, color $transition,  box-shadow $transition;
+  &:focus, &:hover{
+    background: $prime-color;
+    color: $c-color;
+    box-shadow: 0px 2px 2px 0px $d3-color;
+    box-shadow: 0px 1px 2px 0px $d7-color;
+    box-shadow: 0px 3px 1px 0px $d1-color
+}}
+
+.portfolio-item{
+  margin-right: 8px;
+}

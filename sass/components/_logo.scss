@@ -1,0 +1,22 @@
+.logo{
+  font-size: $fz2;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+}
+
+.header-logo{
+  display:flex ;
+  margin-right: 93px;
+}
+
+.logo-web{
+  color: $prime-color;
+}
+
+.logo-studio{
+  color: $d-color;
+}
+
