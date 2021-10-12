@@ -37,9 +37,9 @@
   transition: box-shadow $transition;
   text-decoration: none;
 &:hover, &:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-     0px 4px 4px rgba(0, 0, 0, 0.06),
-     1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px $d9-color,
+     0px 4px 4px $d8-color,
+     1px 4px 6px $d9-color;
 &:hover .portfolio-overlay, &:focus .portfolio-overlay{
      opacity: 1;
      transform: translateY(-294px);
