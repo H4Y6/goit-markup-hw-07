@@ -3,62 +3,49 @@
   background-color:$bg-color;
 }
 
-.footer-block{
+.footer__block{
   display: flex;
   align-items: baseline;
 }
 
-.footer-start{
-    margin-right: 70px;
-}
+.footer__start{
+    margin-right: 70px;}
 
-address{
+.footer__address{
   font-style: normal;
   line-height: 1.5;
 }
 
-.footer-address-list{
+.footer__address__list{
   display: block;
   margin-bottom: 0;
 }
 
-.footer-address-item{
+.footer__address__item{
    margin-bottom: 9px;
 }
 
-.footer-address-one{
+.footer__address__one{
  color: $c-color;
  text-decoration: none;
 }
 
-.footer-address-link{
+.footer__address__link{
   color: $c3-color;
   text-decoration: none;
   transition: color $transition;
-}
-
-.footer-address-link:hover,
-.footer-address-link:focus{
+ &:hover, &:focus{
   color: $prime-color;
-}
-
-.studio{
-  color: $c-color;
-  }
-
-.footer-logo{
-  display: block;
-  margin-bottom: 20px;
-}
+}}
 
 //  ---footer middle--- 
 
-.footer-middle{
+.footer__middle{
   margin-right: 93px;
 }
 
-.footer-title,
-.footer-form-caption{
+.footer__middle__title,
+.footer__final__caption{
   margin-bottom: 20px;
   font-size: $font-size;
   line-height: 1.17;
@@ -66,41 +53,24 @@ address{
   color: $c-color;
 }
 
-.icon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  fill: $c-color;
-  background: $c6-color;
-  transition: background-color $transition;
- &:focus, &:hover{
-    fill: $c-color;
-    background: $prime-color;
- }}
-
 /* footer final */
 
-.footer-final{
-  
- width: 570px;
-}
+.footer__final{
+  width: 570px;}
 
-.footer-final-block{
+.footer__final__block{
   display: inline-flex;
   width: 100%;
 }
 
-.footer-form-label{
+.footer__final__label{
   display: flex;
   height: 50px;
   width: 358px;
   margin-right: 12px;
 }
 
-.footer-form-input{
+.footer__final__input{
   display: flex;
   width: 100%;
   height: 50px;
@@ -111,12 +81,13 @@ address{
   background-color: $bg-color;
 }
 
-.footer-form-btn{
+.footer__final__btn{
    display: flex;
    align-items: center;
+   @extend .prime-btn
  }
 
-.icon-send{
+.footer__final__icon-send{
   margin-left: 10px;
-   fill: $c-color;
+  fill: $c-color;
 }

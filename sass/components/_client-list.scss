@@ -1,0 +1,20 @@
+.cliient__title{
+  @extend .deal__title;}
+
+.client-list{
+  @extend .plan-list;}
+
+.client__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid  $c5-color;
+  border-radius: 4px;
+  fill: $c5-color;
+  transition: fill $transition, border-color $transition;
+&:hover, &:focus{
+  fill: $prime-color;
+  border-color: $prime-color;
+}}

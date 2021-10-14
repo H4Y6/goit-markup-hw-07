@@ -6,17 +6,23 @@
   font-family: Raleway, sans-serif;
   text-decoration: none;
 }
+.logo__web{
+  color: $prime-color;}
 
-.header-logo{
+.logo__studio{
+  color: $d-color;}
+
+.header__logo{
   display:flex ;
   margin-right: 93px;
 }
 
-.logo-web{
-  color: $prime-color;
+.footer__logo{
+  display:flex;
+  margin-bottom: 20px;
 }
 
-.logo-studio{
-  color: $d-color;
-}
+.footer__logo--dark-theme{
+  color: $c-color;  }
+
 

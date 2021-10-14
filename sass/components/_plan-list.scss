@@ -1,0 +1,24 @@
+.plan-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan__item__title{
+  @extend %title;
+  text-transform: uppercase;
+  margin-bottom: $item-title-gap;
+}
+
+.plan__item {
+  flex-basis: calc((100% - 90px) / 4);}
+
+.plan__item__box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 270px;
+  background: $c11-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+} 
