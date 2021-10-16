@@ -1,10 +1,10 @@
 .nav__menu-list{
  display: flex;}
  
-.nav__menu__item
+.nav__item
   {margin-right: 50px;}
 
-.nav__menu__link{
+.nav__link{
   @extend %link;
   color: $prime-title-color;
   &:focus, &:hover{

@@ -4,7 +4,7 @@
 }
 
 .header{
-  border-bottom: 1px solid $c1-color;
+  border-bottom: 1px solid #ECECEC;
   padding-top: 24px ;
   padding-bottom: 25px;
 } 
@@ -14,18 +14,17 @@
   margin-left: auto;
 }
 
-.header__contact__icon{
+.header__icon{
   fill: currentColor;
   margin-right: 10px;
 }
 
-.header__contact__item{
+.header__item{
   margin-right: 30px;}
 
-.header__contact__link{
+.header__link{
   @extend %link;
     color: $prime-text-color;
-    
  &:hover, &:focus{
     color: $prime-color;
 }}

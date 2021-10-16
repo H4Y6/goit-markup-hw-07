@@ -1,5 +1,5 @@
 .team{
-  background: $c2-color;}
+  background: #F5F4FA;}
 
 .team__title{
   @extend .deal__title;}
@@ -12,23 +12,23 @@
   font-size: $fz;
   line-height: 1.17;
   text-align: center;
-  box-shadow: 0px 1px 3px $d3-color, 0px 1px 1px
-   $d4-color, 0px 2px 1px $d5-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px
+   rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
 }
 
-.team__item__title{
+.team__item-title{
   font-size: $fz;
   margin-bottom: $item-title-gap;
   font-weight: 500;
   color: $prime-title-color;
 }
 
-.team__item__text{
+.team__item-text{
   margin-bottom: 16px;}
 
-.team__item__bottom{
+.team__item-bottom{
   padding:30px 32px;
-  background-color: $c-color;
+  background-color: #fff;
 }

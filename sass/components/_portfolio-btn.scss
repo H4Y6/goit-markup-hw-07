@@ -14,15 +14,15 @@
   font-size: $fz;
   letter-spacing: 0.03em;
   line-height: 1.6;
-  background: $c2-color;
+  background: #F5F4FA;
   transition: background-color $transition,
    color $transition,  box-shadow $transition;
   &:focus, &:hover{
     background: $prime-color;
-    color: $c-color;
-    box-shadow: 0px 2px 2px 0px $d3-color;
-    box-shadow: 0px 1px 2px 0px $d7-color;
-    box-shadow: 0px 3px 1px 0px $d1-color
+    color: #fff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }}
 
 .portfolio__item{

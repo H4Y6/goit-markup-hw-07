@@ -1,4 +1,4 @@
-.cliient__title{
+.client__title{
   @extend .deal__title;}
 
 .client-list{
@@ -10,9 +10,9 @@
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid  $c5-color;
+  border: 1px solid  #AFB1B8;
   border-radius: 4px;
-  fill: $c5-color;
+  fill: #AFB1B8;
   transition: fill $transition, border-color $transition;
 &:hover, &:focus{
   fill: $prime-color;

@@ -6,20 +6,21 @@ justify-content: center;}
   margin-right: 10px;
 }
 
-.icon{
+.icon__link{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: $c5-color;
+  fill: #AFB1B8;
   transition: background-color $transition, fill $transition;
  &:focus, &:hover{
-    fill: $c-color;
+    fill: #fff;
     background: $prime-color;
  }}
 
-.icon--dark-theme{
-  fill: $c-color;
-  background: $c6-color;}
+.icon__link--dark-theme{
+  fill: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
