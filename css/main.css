@@ -42,7 +42,12 @@ ul {
   padding: 0;
 }
 
-p, h1, h2, h3, h4, h5 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
@@ -108,39 +113,39 @@ p, h1, h2, h3, h4, h5 {
   color: #2196F3;
 }
 
-.logo {
+.logo__label {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   font-family: Raleway, sans-serif;
-  text-decoration: none;
 }
 
-.logo__web {
+.logo__label--blue {
   color: #2196F3;
 }
 
-.logo__studio {
+.logo__label--black {
   color: #000;
 }
 
-.header__logo {
+.logo-label--white {
+  color: #fff;
+}
+
+.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-decoration: none;
+}
+
+.logo--left {
   margin-right: 93px;
 }
 
-.footer__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.logo--top {
   margin-bottom: 20px;
-}
-
-.footer__logo--dark-theme {
-  color: #fff;
 }
 
 .hero {

@@ -1,28 +1,29 @@
-.logo{
+.logo__label {
   font-size: $fz2;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   font-family: Raleway, sans-serif;
+}
+.logo__label--blue {
+  color: $prime-color;
+}
+
+.logo__label--black {
+  color: #000;
+}
+.logo-label--white {
+  color: #fff;
+}
+.logo {
+  display: flex;
   text-decoration: none;
 }
-.logo__web{
-  color: $prime-color;}
 
-.logo__studio{
-  color: #000;}
-
-.header__logo{
-  display:flex ;
+.logo--left {
   margin-right: 93px;
 }
 
-.footer__logo{
-  display:flex;
+.logo--top {
   margin-bottom: 20px;
 }
-
-.footer__logo--dark-theme{
-  color: #fff;  }
-
-
