@@ -84,9 +84,13 @@ h5 {
 }
 
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
+}
+
+.header__logo {
+  margin-right: 93px;
 }
 
 .header__contact-list {
@@ -138,14 +142,6 @@ h5 {
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
-}
-
-.logo--left {
-  margin-right: 93px;
-}
-
-.logo--top {
-  margin-bottom: 20px;
 }
 
 .hero {
@@ -239,6 +235,10 @@ h5 {
 
 .footer__start {
   margin-right: 70px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
 }
 
 .footer__join {
@@ -337,8 +337,6 @@ h5 {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
-  -webkit-transform: scale(1);
-          transform: scale(1);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -350,8 +348,8 @@ h5 {
 }
 
 .backdrop.is-hidden .modal {
-  -webkit-transform: scale(-0.01);
-          transform: scale(-0.01);
+  -webkit-transform: scale(-0.1);
+          transform: scale(-0.1);
 }
 
 .modal {
@@ -391,18 +389,24 @@ h5 {
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  -webkit-transform: scale(1) rotate(0);
+          transform: scale(1) rotate(0);
   fill: #000;
   background-color: #fff;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__close-btn:hover, .modal__close-btn:focus {
+  -webkit-transform: scale(1.6) rotate(1turn);
+          transform: scale(1.6) rotate(1turn);
   fill: #2196F3;
   border-color: #2196F3;
 }
 
-.modal__form__caption {
+.form__caption {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
@@ -424,7 +428,7 @@ h5 {
   margin-bottom: 30px;
 }
 
-.modal__form-policy__label {
+.modal__form-policy-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,7 +440,7 @@ h5 {
           justify-content: center;
 }
 
-.modal__form-field__label {
+.modal__form-field-label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -444,7 +448,7 @@ h5 {
   letter-spacing: 0.01em;
 }
 
-.modal__form-comment__label {
+.modal__form-comment-label {
   display: block;
   font-size: 12px;
   line-height: 1.17;
@@ -452,7 +456,7 @@ h5 {
   margin-bottom: 4px;
 }
 
-.modal__form-comment__textarea {
+.modal__form-comment-textarea {
   display: block;
   width: 100%;
   height: 120px;
@@ -465,11 +469,11 @@ h5 {
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__form-comment__textarea:hover, .modal__form-comment__textarea:focus {
+.modal__form-comment-textarea:hover, .modal__form-comment-textarea:focus {
   outline-color: #2196F3;
 }
 
-.modal__form-field__input {
+.modal__form-field-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,16 +487,16 @@ h5 {
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__form-field__input:focus, .modal__form-field__input:hover {
+.modal__form-field-input:focus, .modal__form-field-input:hover {
   outline-color: #2196F3;
 }
 
-.modal__form-field__input:hover + .modal__form-field__icon,
-.modal__form-field__input:focus + .modal__form-field__icon {
+.modal__form-field-input:hover + .modal__form-field-icon,
+.modal__form-field-input:focus + .modal__form-field-icon {
   fill: #2196F3;
 }
 
-.modal__form-field__icon {
+.modal__form-field-icon {
   position: absolute;
   bottom: 20px;
   left: 12px;
@@ -506,7 +510,7 @@ h5 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__form-policy__icon {
+.modal__form-policy-icon {
   cursor: pointer;
   width: 16px;
   height: 15px;
@@ -523,17 +527,16 @@ h5 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__form-policy__link {
+.modal__form-policy-link {
   margin-left: 5px;
 }
 
-.modal__form-policy__checkbox:checked +
-.modal__form-policy__icon {
+.modal__form-policy-checkbox:checked + .modal__form-policy-icon {
   background-color: #2196F3;
   border-color: #2196F3;
 }
 
-.modal__form__btn {
+.modal__form-btn {
   display: block;
   margin: auto;
 }
@@ -820,12 +823,12 @@ h5 {
   color: #2196F3;
 }
 
-.current {
+.nav__link--current {
   position: relative;
   color: #2196F3;
 }
 
-.current::after {
+.nav__link--current::after {
   position: absolute;
   content: "";
   width: 100%;
